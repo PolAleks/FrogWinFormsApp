@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FrogWinFormsApp
@@ -41,8 +37,19 @@ namespace FrogWinFormsApp
 
             if (IsWinner())
             {
-                MessageBox.Show("Ура Вы выиграли");
+                CongratulationOnVictory();
             }
+        }
+
+        private void CongratulationOnVictory()
+        {
+            string message = score > 24 ? $"Ваш результат - {score} прыжка. Можно лучше.\n" : $"{score} - лучший результат.\n";
+            var result = MessageBox.Show($"{message}Хотите сыграть еще раз?", "Вы выиграли!", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+                Application.Restart();
+            else
+                Application.Exit();
         }
 
         private bool IsWinner()
