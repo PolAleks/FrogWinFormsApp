@@ -56,5 +56,10 @@ namespace FrogWinFormsApp
         {
             return pictureBoxes.Where(p => p.AccessibleName == "Right").All(p => p.Location.X < 440) && emptyPictureBox.Location.X == 440;
         }
+
+        private void начатьСначалаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

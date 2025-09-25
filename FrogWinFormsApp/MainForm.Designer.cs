@@ -205,6 +205,7 @@
             this.начатьСначалаToolStripMenuItem.Name = "начатьСначалаToolStripMenuItem";
             this.начатьСначалаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.начатьСначалаToolStripMenuItem.Text = "Начать сначала";
+            this.начатьСначалаToolStripMenuItem.Click += new System.EventHandler(this.начатьСначалаToolStripMenuItem_Click);
             // 
             // правилаИгрыToolStripMenuItem
             // 
