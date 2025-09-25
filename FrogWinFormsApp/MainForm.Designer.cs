@@ -37,6 +37,8 @@
             this.rightPictureBox2 = new System.Windows.Forms.PictureBox();
             this.rightPictureBox3 = new System.Windows.Forms.PictureBox();
             this.rightPictureBox4 = new System.Windows.Forms.PictureBox();
+            this.labelText = new System.Windows.Forms.Label();
+            this.labelScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox3)).BeginInit();
@@ -50,6 +52,7 @@
             // 
             // leftPictureBox1
             // 
+            this.leftPictureBox1.AccessibleName = "Left";
             this.leftPictureBox1.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
             this.leftPictureBox1.Location = new System.Drawing.Point(0, 0);
             this.leftPictureBox1.Name = "leftPictureBox1";
@@ -61,6 +64,7 @@
             // 
             // leftPictureBox2
             // 
+            this.leftPictureBox2.AccessibleName = "Left";
             this.leftPictureBox2.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
             this.leftPictureBox2.Location = new System.Drawing.Point(110, 0);
             this.leftPictureBox2.Name = "leftPictureBox2";
@@ -72,6 +76,7 @@
             // 
             // leftPictureBox3
             // 
+            this.leftPictureBox3.AccessibleName = "Left";
             this.leftPictureBox3.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
             this.leftPictureBox3.Location = new System.Drawing.Point(220, 0);
             this.leftPictureBox3.Name = "leftPictureBox3";
@@ -83,6 +88,7 @@
             // 
             // leftPictureBox4
             // 
+            this.leftPictureBox4.AccessibleName = "Left";
             this.leftPictureBox4.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
             this.leftPictureBox4.Location = new System.Drawing.Point(330, 0);
             this.leftPictureBox4.Name = "leftPictureBox4";
@@ -104,6 +110,7 @@
             // 
             // rightPictureBox1
             // 
+            this.rightPictureBox1.AccessibleName = "Right";
             this.rightPictureBox1.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
             this.rightPictureBox1.Location = new System.Drawing.Point(550, 0);
             this.rightPictureBox1.Name = "rightPictureBox1";
@@ -115,6 +122,7 @@
             // 
             // rightPictureBox2
             // 
+            this.rightPictureBox2.AccessibleName = "Right";
             this.rightPictureBox2.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
             this.rightPictureBox2.Location = new System.Drawing.Point(660, 0);
             this.rightPictureBox2.Name = "rightPictureBox2";
@@ -126,6 +134,7 @@
             // 
             // rightPictureBox3
             // 
+            this.rightPictureBox3.AccessibleName = "Right";
             this.rightPictureBox3.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
             this.rightPictureBox3.Location = new System.Drawing.Point(770, 0);
             this.rightPictureBox3.Name = "rightPictureBox3";
@@ -137,6 +146,7 @@
             // 
             // rightPictureBox4
             // 
+            this.rightPictureBox4.AccessibleName = "Right";
             this.rightPictureBox4.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
             this.rightPictureBox4.Location = new System.Drawing.Point(880, 0);
             this.rightPictureBox4.Name = "rightPictureBox4";
@@ -146,11 +156,33 @@
             this.rightPictureBox4.TabStop = false;
             this.rightPictureBox4.Click += new System.EventHandler(this.ClickedPictureBox);
             // 
+            // labelText
+            // 
+            this.labelText.AutoSize = true;
+            this.labelText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText.Location = new System.Drawing.Point(23, 127);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(151, 16);
+            this.labelText.TabIndex = 9;
+            this.labelText.Text = "Количество ходов -";
+            // 
+            // labelScore
+            // 
+            this.labelScore.AutoSize = true;
+            this.labelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelScore.Location = new System.Drawing.Point(180, 127);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(15, 16);
+            this.labelScore.TabIndex = 10;
+            this.labelScore.Text = "0";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 161);
+            this.Controls.Add(this.labelScore);
+            this.Controls.Add(this.labelText);
             this.Controls.Add(this.rightPictureBox4);
             this.Controls.Add(this.rightPictureBox3);
             this.Controls.Add(this.rightPictureBox2);
@@ -176,6 +208,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,6 +223,8 @@
         private System.Windows.Forms.PictureBox rightPictureBox2;
         private System.Windows.Forms.PictureBox rightPictureBox3;
         private System.Windows.Forms.PictureBox rightPictureBox4;
+        private System.Windows.Forms.Label labelText;
+        private System.Windows.Forms.Label labelScore;
     }
 }
 

@@ -12,9 +12,12 @@ namespace FrogWinFormsApp
 {
     public partial class MainForm : Form
     {
+        private int score = 0;
+        private List<PictureBox> pictureBoxes;
         public MainForm()
         {
             InitializeComponent();
+            pictureBoxes = Controls.OfType<PictureBox>().ToList();
         }
 
         private void ClickedPictureBox(object sender, EventArgs e)
@@ -32,7 +35,19 @@ namespace FrogWinFormsApp
             else
             {
                 (clickedPictureBox.Location, emptyPictureBox.Location) = (emptyPictureBox.Location, clickedPictureBox.Location);
+
+                labelScore.Text = (++score).ToString();
             }
+
+            if (IsWinner())
+            {
+                MessageBox.Show("Ура Вы выиграли");
+            }
+        }
+
+        private bool IsWinner()
+        {
+            return pictureBoxes.Where(p => p.AccessibleName == "Right").All(p => p.Location.X < 440) && emptyPictureBox.Location.X == 440;
         }
     }
 }
