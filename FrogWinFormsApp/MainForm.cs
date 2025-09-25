@@ -24,7 +24,15 @@ namespace FrogWinFormsApp
 
         private void Swap(PictureBox clickedPictureBox)
         {
-            (clickedPictureBox.Location, emptyPictureBox.Location) = (emptyPictureBox.Location, clickedPictureBox.Location);
+            var distanse = Math.Abs(clickedPictureBox.Location.X - emptyPictureBox.Location.X) / emptyPictureBox.Width;
+            if (distanse > 2)
+            {
+                MessageBox.Show("Так нельзя!");
+            }
+            else
+            {
+                (clickedPictureBox.Location, emptyPictureBox.Location) = (emptyPictureBox.Location, clickedPictureBox.Location);
+            }
         }
     }
 }
