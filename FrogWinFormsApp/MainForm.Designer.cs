@@ -37,6 +37,12 @@
             this.rightPictureBox2 = new System.Windows.Forms.PictureBox();
             this.rightPictureBox3 = new System.Windows.Forms.PictureBox();
             this.rightPictureBox4 = new System.Windows.Forms.PictureBox();
+            this.labelText = new System.Windows.Forms.Label();
+            this.labelScore = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.начатьСначалаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftPictureBox3)).BeginInit();
@@ -46,12 +52,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox4)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // leftPictureBox1
             // 
+            this.leftPictureBox1.AccessibleName = "Left";
             this.leftPictureBox1.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
-            this.leftPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.leftPictureBox1.Location = new System.Drawing.Point(0, 24);
             this.leftPictureBox1.Name = "leftPictureBox1";
             this.leftPictureBox1.Size = new System.Drawing.Size(110, 110);
             this.leftPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,8 +69,9 @@
             // 
             // leftPictureBox2
             // 
+            this.leftPictureBox2.AccessibleName = "Left";
             this.leftPictureBox2.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
-            this.leftPictureBox2.Location = new System.Drawing.Point(110, 0);
+            this.leftPictureBox2.Location = new System.Drawing.Point(110, 24);
             this.leftPictureBox2.Name = "leftPictureBox2";
             this.leftPictureBox2.Size = new System.Drawing.Size(110, 110);
             this.leftPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,8 +81,9 @@
             // 
             // leftPictureBox3
             // 
+            this.leftPictureBox3.AccessibleName = "Left";
             this.leftPictureBox3.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
-            this.leftPictureBox3.Location = new System.Drawing.Point(220, 0);
+            this.leftPictureBox3.Location = new System.Drawing.Point(220, 24);
             this.leftPictureBox3.Name = "leftPictureBox3";
             this.leftPictureBox3.Size = new System.Drawing.Size(110, 110);
             this.leftPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,8 +93,9 @@
             // 
             // leftPictureBox4
             // 
+            this.leftPictureBox4.AccessibleName = "Left";
             this.leftPictureBox4.Image = global::FrogWinFormsApp.Properties.Resources.leftFrog;
-            this.leftPictureBox4.Location = new System.Drawing.Point(330, 0);
+            this.leftPictureBox4.Location = new System.Drawing.Point(330, 24);
             this.leftPictureBox4.Name = "leftPictureBox4";
             this.leftPictureBox4.Size = new System.Drawing.Size(110, 110);
             this.leftPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +106,7 @@
             // emptyPictureBox
             // 
             this.emptyPictureBox.Image = global::FrogWinFormsApp.Properties.Resources.list;
-            this.emptyPictureBox.Location = new System.Drawing.Point(440, 0);
+            this.emptyPictureBox.Location = new System.Drawing.Point(440, 24);
             this.emptyPictureBox.Name = "emptyPictureBox";
             this.emptyPictureBox.Size = new System.Drawing.Size(110, 110);
             this.emptyPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,8 +115,9 @@
             // 
             // rightPictureBox1
             // 
+            this.rightPictureBox1.AccessibleName = "Right";
             this.rightPictureBox1.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
-            this.rightPictureBox1.Location = new System.Drawing.Point(550, 0);
+            this.rightPictureBox1.Location = new System.Drawing.Point(550, 24);
             this.rightPictureBox1.Name = "rightPictureBox1";
             this.rightPictureBox1.Size = new System.Drawing.Size(110, 110);
             this.rightPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,8 +127,9 @@
             // 
             // rightPictureBox2
             // 
+            this.rightPictureBox2.AccessibleName = "Right";
             this.rightPictureBox2.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
-            this.rightPictureBox2.Location = new System.Drawing.Point(660, 0);
+            this.rightPictureBox2.Location = new System.Drawing.Point(660, 24);
             this.rightPictureBox2.Name = "rightPictureBox2";
             this.rightPictureBox2.Size = new System.Drawing.Size(110, 110);
             this.rightPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,8 +139,9 @@
             // 
             // rightPictureBox3
             // 
+            this.rightPictureBox3.AccessibleName = "Right";
             this.rightPictureBox3.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
-            this.rightPictureBox3.Location = new System.Drawing.Point(770, 0);
+            this.rightPictureBox3.Location = new System.Drawing.Point(770, 24);
             this.rightPictureBox3.Name = "rightPictureBox3";
             this.rightPictureBox3.Size = new System.Drawing.Size(110, 110);
             this.rightPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,8 +151,9 @@
             // 
             // rightPictureBox4
             // 
+            this.rightPictureBox4.AccessibleName = "Right";
             this.rightPictureBox4.Image = global::FrogWinFormsApp.Properties.Resources.rightFrog;
-            this.rightPictureBox4.Location = new System.Drawing.Point(880, 0);
+            this.rightPictureBox4.Location = new System.Drawing.Point(880, 24);
             this.rightPictureBox4.Name = "rightPictureBox4";
             this.rightPictureBox4.Size = new System.Drawing.Size(110, 110);
             this.rightPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -146,11 +161,65 @@
             this.rightPictureBox4.TabStop = false;
             this.rightPictureBox4.Click += new System.EventHandler(this.ClickedPictureBox);
             // 
+            // labelText
+            // 
+            this.labelText.AutoSize = true;
+            this.labelText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText.Location = new System.Drawing.Point(25, 150);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(151, 16);
+            this.labelText.TabIndex = 9;
+            this.labelText.Text = "Количество ходов -";
+            // 
+            // labelScore
+            // 
+            this.labelScore.AutoSize = true;
+            this.labelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelScore.Location = new System.Drawing.Point(182, 150);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(15, 16);
+            this.labelScore.TabIndex = 10;
+            this.labelScore.Text = "0";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.менюToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(989, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // менюToolStripMenuItem
+            // 
+            this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.начатьСначалаToolStripMenuItem,
+            this.правилаИгрыToolStripMenuItem});
+            this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
+            this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.менюToolStripMenuItem.Text = "Меню";
+            // 
+            // начатьСначалаToolStripMenuItem
+            // 
+            this.начатьСначалаToolStripMenuItem.Name = "начатьСначалаToolStripMenuItem";
+            this.начатьСначалаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.начатьСначалаToolStripMenuItem.Text = "Начать сначала";
+            this.начатьСначалаToolStripMenuItem.Click += new System.EventHandler(this.начатьСначалаToolStripMenuItem_Click);
+            // 
+            // правилаИгрыToolStripMenuItem
+            // 
+            this.правилаИгрыToolStripMenuItem.Name = "правилаИгрыToolStripMenuItem";
+            this.правилаИгрыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.правилаИгрыToolStripMenuItem.Text = "Правила игры";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 161);
+            this.ClientSize = new System.Drawing.Size(989, 185);
+            this.Controls.Add(this.labelScore);
+            this.Controls.Add(this.labelText);
             this.Controls.Add(this.rightPictureBox4);
             this.Controls.Add(this.rightPictureBox3);
             this.Controls.Add(this.rightPictureBox2);
@@ -160,6 +229,7 @@
             this.Controls.Add(this.leftPictureBox3);
             this.Controls.Add(this.leftPictureBox2);
             this.Controls.Add(this.leftPictureBox1);
+            this.Controls.Add(this.menuStrip1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
@@ -175,7 +245,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rightPictureBox4)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,6 +263,12 @@
         private System.Windows.Forms.PictureBox rightPictureBox2;
         private System.Windows.Forms.PictureBox rightPictureBox3;
         private System.Windows.Forms.PictureBox rightPictureBox4;
+        private System.Windows.Forms.Label labelText;
+        private System.Windows.Forms.Label labelScore;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem начатьСначалаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem правилаИгрыToolStripMenuItem;
     }
 }
 
